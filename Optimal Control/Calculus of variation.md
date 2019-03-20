@@ -1,37 +1,45 @@
+
 <script type="text/x-mathjax-config">
-renderMathInElement(document.body, {
-  delimiters: [
-    {left: "$$", right: "$$", display: true},
-    {left: "\\(", right: "\\)", display: false},
-    {left: "\\[", right: "\\]", display: true},
-    {left: "\\begin{equation}", right: "\\end{equation}", display: true}
-  ]
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-\begin{aligned}
+$$
+\begin{align}
 a &= b + c \\
-  &= e + f
-\end{aligned}
+&= e + f \label{g2}
+\end{align}
+$$
+
+\begin{equation}
+   E = mc^2
+\end{equation}
+
+# Calculus of Variation $x^2$
+
+$$ E = mc^2 \label{gg} $$
+
+# HTML
+
+
+
 ## Calculus of Variation
 $$
-   E = mc^2 \tag{1}
+   E = mc^2 \label{g1}
 $$
-$$
-\begin{aligned}
-x^2  \tag{1}
-\end{aligned}
-$$
+
 $$x^2 $$
 
+In \eqref{g2}
 
 ## Hamilton Jacobi Bellman Equation
-> Written with [StackEdit](https://stackedit.io/).
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODUzODkwMiwtMTY2MDEyNzQzNCwxNT
-I1MzAxNDI3LDE4OTcxMDEwNTcsMzQxMjYyODM4LDExNzE0ODgw
-OTNdfQ==
--->
